@@ -35,7 +35,7 @@ public class Funcionario {
         if (novoSalario < 350.0) {
             throw new ViolacaoCltException("Salário menor" +
                     " que R$350.0, o que não é permitido.",
-                    7);
+                    777);
         }
         if (this.salario != 0 && novoSalario > this.salario * 1.10) {
             throw new AumentoAbsurdoException("Aumento " +

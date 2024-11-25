@@ -37,9 +37,12 @@ public class Main {
 
             // Alterando o nome para dar o erro
             try {
-                funcionario1.setNome("Este nome é muito longo e tem mais de quarenta caracteres!");
+                funcionario1.setNome("Este nome é muito " +
+                        "longo e tem mais de quarenta " +
+                        "caracteres!");
             } catch (IllegalArgumentException e) {
-                System.out.println("Erro ao definir o nome de Christiano: " + e.getMessage());
+                System.out.println("Erro ao definir o " +
+                        "nome de christiano: " + e.getMessage());
             }
 
             // Tentativa de por um salário menor que o
